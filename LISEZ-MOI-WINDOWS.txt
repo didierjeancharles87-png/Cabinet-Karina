@@ -1,0 +1,37 @@
+CABINET DENTAIRE - INSTALLATION SUR WINDOWS (sans XAMPP, gratuit)
+=================================================================
+
+ETAPE 1 - Telecharger PHP (une seule fois, gratuit)
+  1. Allez sur  https://windows.php.net/download/
+  2. Choisissez la version la plus recente "PHP 8.x" > "x64 Non Thread Safe" > "Zip".
+  3. Dezippez ce fichier ET copiez TOUT son contenu (php.exe, dossier ext, etc.)
+     dans le dossier  "php"  qui est a cote de ce fichier.
+     => on doit avoir  CabinetDentaire\php\php.exe
+  (Si PHP affiche une erreur "VCRUNTIME140.dll manquant" : installez gratuitement
+   "Visual C++ Redistributable x64" de Microsoft, puis recommencez.)
+  Si XAMPP est deja installe sur ce PC, vous pouvez sauter l'etape 1 : il sera utilise.
+
+ETAPE 2 - Installer l'icone
+  Double-cliquez sur  Installer.bat
+  -> une icone "Cabinet Dentaire" apparait sur le Bureau.
+  -> repondez O si vous voulez que le serveur demarre tout seul avec Windows.
+
+ETAPE 3 - Utiliser
+  Double-cliquez sur l'icone "Cabinet Dentaire" : l'application s'ouvre dans sa propre fenetre.
+  Connexion : admin / admin123   (a changer dans Parametres > Acces)
+  La premiere fois, Windows demande une autorisation reseau : cliquez "Autoriser l'acces"
+  (necessaire seulement pour utiliser la tablette / le telephone).
+
+TABLETTE / TELEPHONE (meme Wi-Fi)
+  Double-cliquez sur Adresse-tablette.bat : il affiche l'adresse a taper, ex  http://192.168.1.20:8080/
+  Puis "Ajouter a l'ecran d'accueil" dans Safari / Chrome.
+  L'ordinateur doit etre allume.
+
+FICHIERS
+  Cabinet.vbs ...... lance l'application (c'est ce que fait l'icone)
+  Arreter.bat ...... arrete le serveur
+  Diagnostic.bat ... en cas de probleme (envoyez-moi ce qui s'affiche)
+  cabinet\data\ .... VOS DONNEES : copiez cabinet\data\ et cabinet\uploads\ regulierement
+                     (cle USB / Google Drive) = sauvegarde.
+
+MISE A JOUR : remplacez le dossier "cabinet" par le nouveau EN GARDANT data\ et uploads\.

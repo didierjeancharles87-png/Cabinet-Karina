@@ -1,0 +1,35 @@
+﻿# Confidential application data
+/cabinet/data/*
+!/cabinet/data/.htaccess
+!/cabinet/data/index.html
+
+# Patient documents and uploads
+/cabinet/uploads/*
+!/cabinet/uploads/index.html
+
+# Local PHP runtime
+/php/
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Backups and temporary files
+*.before_*
+*.bak
+*.log
+*.tmp
+*.old
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+config.local.php
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
